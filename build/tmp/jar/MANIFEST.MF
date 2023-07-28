@@ -5,5 +5,5 @@ Specification-Version: 1
 Implementation-Title: bctabchat
 Implementation-Version: 1.0
 Implementation-Vendor: TallonsCZE
-Implementation-Timestamp: 2023-07-28T11:49:24+0200
+Implementation-Timestamp: 2023-07-28T12:53:29+0200
 
