@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: bctabchat
+Specification-Vendor: TallonsCZE
+Specification-Version: 1
+Implementation-Title: bctabchat
+Implementation-Version: 1.0
+Implementation-Vendor: TallonsCZE
+Implementation-Timestamp: 2023-07-28T11:49:24+0200
+
