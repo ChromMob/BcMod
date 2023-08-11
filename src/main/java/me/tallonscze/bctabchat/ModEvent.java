@@ -13,9 +13,6 @@ import net.minecraftforge.fml.common.Mod;
 
 public class ModEvent {
 
-    @Mod.EventBusSubscriber(modid = Bctabchat.MODID)
-    public class ForgeEvents{
-
         @SubscribeEvent()
         public void onTabListNameFormat(PlayerEvent.TabListNameFormat event){
             try{
@@ -104,7 +101,4 @@ public class ModEvent {
         }catch (Exception e){
             e.printStackTrace();
         }
-
-
-    }
 }
