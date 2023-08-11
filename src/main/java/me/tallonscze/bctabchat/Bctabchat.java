@@ -1,5 +1,7 @@
 package me.tallonscze.bctabchat;
 
+import net.minecraft.client.gui.components.PlayerTabOverlay;
+import net.minecraft.network.chat.Component;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -16,20 +18,21 @@ public class Bctabchat {
     public static final String MODID = "bctabchat";
     // Directly reference a slf4j logger
 
-
     public Bctabchat() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
-
+        MinecraftForge.EVENT_BUS.register(new ModEvent());
     }
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
         // Do something when the server starts
-        System.out.print("Starting Mod");
+        System.out.println("Starting Mod");
 
     }
+
+
 
 }
