@@ -20,10 +20,12 @@ public class Bctabchat {
 
     public Bctabchat() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
+        System.out.println("Starting...");
         // Register ourselves for server and other game events we are interested in
+        System.out.println("Registring events..");
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(new ModEvent());
+        System.out.println("Registring events complete");
     }
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
